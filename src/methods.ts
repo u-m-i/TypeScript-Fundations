@@ -3,6 +3,8 @@ class HttpRequest
 	status: number;
 	date: Date;
 
+	method: string = "";
+
 	constructor(status: number, date: Date)
 	{
 		this.date = date;
@@ -16,6 +18,13 @@ class HttpRequest
 		return `Status: ${this.status}`;
 	}
 
+
+
+	// This is the literal type
+	configureMethod(method: 'get' | 'update' | 'post')
+	{
+		this.method = method;
+	}
 }
 
 // Common usage
@@ -23,6 +32,8 @@ class HttpRequest
 const r = new HttpRequest(200, new Date());
 
 console.log(r.printStatus());
+
+
 
 
 
