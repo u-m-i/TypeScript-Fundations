@@ -29,9 +29,11 @@ class HttpRequest
 
 // Common usage
 
-const r = new HttpRequest(200, new Date());
+const request = new HttpRequest(200, new Date());
 
-console.log(r.printStatus());
+console.log(request.printStatus());
+
+request.configureMethod('get');
 
 
 
