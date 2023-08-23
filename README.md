@@ -1,2 +1,17 @@
 # TypeScript-Fundations
-TypeScript basic knowledge along with various functional experiments.
+
+Brief overview for all the sintax, mnemonic and uses of the OOP on TypeScript
+
+## History
+
+
+## Basics of OOP (Object Oriented Programming)
+
+
+### Classes
+
+
+### Methods
+
+
+
