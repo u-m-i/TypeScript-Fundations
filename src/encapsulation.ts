@@ -6,15 +6,16 @@ export class Node
 {
 	// By default a member of the class is public
 	name:string;
-	public reference:Node;
+
+	public left:Node;
 	// But we can explicitly declare it public
 	
 	// The accesibility keyword for static values : readonly
-	readonly antropy:int = 13;
+	readonly acces_level:number = 14;
 
 
 
-	Node(name:string)
+	constructor(name:string)
 	{
 		this.name = name;
 	}

@@ -3,17 +3,17 @@ function lexicalName(func : Function)
     return func.name;
 }
 
-// Initialization 
+// Initialization of a class also known as memory allocation 
 const expDate = new Date();
 
-// Members usage. 
+// Notation for the use of the class (Object) members. 
 expDate.getHours();
 expDate.getTime();
 expDate.toISOString();
 
 console.log("A member of the class Date is Date." + lexicalName(expDate.getDate));
 
-// Definition of class
+// Simply definition of a class : class <className> 
 
 class RomanDate
 {
@@ -21,9 +21,10 @@ class RomanDate
     month: number = 0 ;
     day: number = 0;
 }
-// ^
+
+
 /**
- *  Note that the properties (variables) of the class do not have an scope prefix, instead TypeScript only uses the typ
+ *  Note that the properties (variables) of the class do not have an accesor prefix, instead TypeScript only uses the typ
  *  Excellent!
 * */
 
@@ -34,6 +35,9 @@ class AmericanDate
 	month: number;
 	day: number;
 
+	// Use the constructo keyword to create the constructor
+		// Note that is could be very different on other languages
+
 	constructor(year: number, month: number, day: number)
 	{
 		this.year = year;
@@ -42,12 +46,12 @@ class AmericanDate
 	}
 }
 
-let mericanDate = new AmericanDate(2023,3,13);
 
 /***
  * Here American Data implements the constructor.
  * And then we can observe how TypeScript formats the classes through the console.
 */
+let mericanDate = new AmericanDate(2023,3,13);
 
 console.log(mericanDate);
 
